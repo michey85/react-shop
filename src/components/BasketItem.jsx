@@ -29,7 +29,7 @@ function BasketItem(props) {
                 className='secondary-content'
                 onClick={() => removeFromBasket(id)}
             >
-                <i class='material-icons basket-delete'>close</i>
+                <i className='material-icons basket-delete'>close</i>
             </span>
         </li>
     );

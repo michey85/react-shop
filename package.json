@@ -1,6 +1,6 @@
 {
   "name": "shop-project",
-  "home": "https://michey85.github.io/react-shop",
+  "homepage": "https://michey85.github.io/react-shop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
