@@ -92,7 +92,7 @@ function Shop() {
         })
             .then((response) => response.json())
             .then((data) => {
-                data.featured && setGoods(data.featured);
+                data.daily && setGoods(data.daily);
                 setLoading(false);
             });
     }, []);
