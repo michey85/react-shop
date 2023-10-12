@@ -13,18 +13,13 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "prettier": "prettier",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -39,7 +34,12 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "gh-pages": "^3.1.0",
+    "prettier": "^3.0.3"
   },
   "volta": {
     "node": "16.20.2",
