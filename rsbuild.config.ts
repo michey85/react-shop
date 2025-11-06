@@ -10,8 +10,9 @@ export default defineConfig({
   },
   output: {
     polyfill: 'usage',
+    assetPrefix: '/react-shop/',
     distPath: {
-      root: 'dist',
+      root: 'build',
     },
   },
   source: {
