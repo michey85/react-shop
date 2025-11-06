@@ -11,7 +11,7 @@ export default defineConfig({
   output: {
     polyfill: 'usage',
     distPath: {
-      root: 'build',
+      root: 'dist',
     },
   },
   source: {
