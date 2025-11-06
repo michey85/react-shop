@@ -8,8 +8,6 @@ function GoodsItem(props) {
     addToBasket = Function.prototype,
   } = props;
 
-  console.log(props);
-
   return (
     <div className="card">
       <div className="card-image">

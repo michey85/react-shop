@@ -92,6 +92,13 @@ nav {
   color: #26a69a;
 }
 
+.basket-delete,
+.basket-quantity,
+.basket-close {
+  background-color: transparent;
+  border: none;
+}
+
 #toast-container {
   top: 3rem !important;
   animation: fade-in 250ms ease-in-out;

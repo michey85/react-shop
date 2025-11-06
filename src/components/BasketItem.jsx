@@ -1,33 +1,49 @@
 function BasketItem(props) {
   const {
-    mainId: id,
-    displayName: name,
-    price: { regularPrice: price },
+    id,
+    name,
+    price,
     quantity,
     removeFromBasket = Function.prototype,
     incQuantity = Function.prototype,
     decQuantity = Function.prototype,
   } = props;
+
   return (
     <li className="collection-item">
       {name}{' '}
-      <i
+      <button
         className="material-icons basket-quantity"
         onClick={() => decQuantity(id)}
+        onKeyDown={e =>
+          e.key === 'Enter' || e.key === ' ' ? decQuantity(id) : null
+        }
+        type="button"
+        aria-label="Decrease quantity"
       >
         remove
-      </i>{' '}
+      </button>{' '}
       x{quantity}{' '}
-      <i
+      <button
         className="material-icons basket-quantity"
         onClick={() => incQuantity(id)}
+        onKeyDown={e =>
+          e.key === 'Enter' || e.key === ' ' ? incQuantity(id) : null
+        }
+        type="button"
+        aria-label="Increase quantity"
       >
         add
-      </i>{' '}
+      </button>{' '}
       = {price * quantity} руб.
-      <span className="secondary-content" onClick={() => removeFromBasket(id)}>
-        <i className="material-icons basket-delete">close</i>
-      </span>
+      <button
+        className="secondary-content material-icons basket-delete"
+        onClick={() => removeFromBasket(id)}
+        onKeyDown={() => removeFromBasket(id)}
+        type="button"
+      >
+        close
+      </button>
     </li>
   );
 }
