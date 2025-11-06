@@ -9,6 +9,7 @@ export default defineConfig({
     template: './public/index.html',
   },
   output: {
+    polyfill: 'usage',
     distPath: {
       root: 'build',
     },
