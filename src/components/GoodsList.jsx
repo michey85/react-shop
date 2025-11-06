@@ -9,9 +9,12 @@ function GoodsList(props) {
 
   return (
     <div className="goods">
-      {goods.map(item => (
-        <GoodsItem key={item.id} {...item} addToBasket={addToBasket} />
-      ))}
+      {goods.map(
+        item =>
+          item.mainId && (
+            <GoodsItem key={item.mainId} {...item} addToBasket={addToBasket} />
+          ),
+      )}
     </div>
   );
 }

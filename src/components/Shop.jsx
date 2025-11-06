@@ -1,11 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { API_KEY, API_URL } from '../config';
-
-import { Preloader } from './Preloader';
-import { GoodsList } from './GoodsList';
-import { Cart } from './Cart';
-import { BasketList } from './BasketList';
 import { Alert } from './Alert';
+import { BasketList } from './BasketList';
+import { Cart } from './Cart';
+import { GoodsList } from './GoodsList';
+import { Preloader } from './Preloader';
 
 function Shop() {
   const [goods, setGoods] = useState([]);
@@ -90,7 +89,7 @@ function Shop() {
     })
       .then(response => response.json())
       .then(data => {
-        data.featured && setGoods(data.featured);
+        data.shop && setGoods(data.shop);
         setLoading(false);
       });
   }, []);

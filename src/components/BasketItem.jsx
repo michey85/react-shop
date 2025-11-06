@@ -1,8 +1,8 @@
 function BasketItem(props) {
   const {
-    id,
-    name,
-    price,
+    mainId: id,
+    displayName: name,
+    price: { regularPrice: price },
     quantity,
     removeFromBasket = Function.prototype,
     incQuantity = Function.prototype,
