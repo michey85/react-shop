@@ -1,0 +1,148 @@
+{
+  "shop": [
+    {
+      "mainId": "item-1",
+      "displayName": "Плазменная винтовка",
+      "displayDescription": "Энергетическое оружие с высокой скоростью стрельбы и точностью.",
+      "price": { "regularPrice": 1200 },
+      "displayAssets": [
+        {
+          "full_background": "/images/item-1.svg",
+          "background": "/images/item-1.svg"
+        }
+      ]
+    },
+    {
+      "mainId": "item-2",
+      "displayName": "Щит бури",
+      "displayDescription": "Защитный артефакт, поглощающий урон от любых стихий.",
+      "price": { "regularPrice": 800 },
+      "displayAssets": [
+        {
+          "full_background": "/images/item-2.svg",
+          "background": "/images/item-2.svg"
+        }
+      ]
+    },
+    {
+      "mainId": "item-3",
+      "displayName": "Теневой плащ",
+      "displayDescription": "Делает владельца невидимым в тёмное время суток.",
+      "price": { "regularPrice": 1500 },
+      "displayAssets": [
+        {
+          "full_background": "/images/item-3.svg",
+          "background": "/images/item-3.svg"
+        }
+      ]
+    },
+    {
+      "mainId": "item-4",
+      "displayName": "Топор грома",
+      "displayDescription": "Мощный боевой топор, заряженный молнией.",
+      "price": { "regularPrice": 950 },
+      "displayAssets": [
+        {
+          "full_background": "/images/item-4.svg",
+          "background": "/images/item-4.svg"
+        }
+      ]
+    },
+    {
+      "mainId": "item-5",
+      "displayName": "Клинок пустоты",
+      "displayDescription": "Клинок из тёмной материи, пронзающий любую броню.",
+      "price": { "regularPrice": 2000 },
+      "displayAssets": [
+        {
+          "full_background": "/images/item-5.svg",
+          "background": "/images/item-5.svg"
+        }
+      ]
+    },
+    {
+      "mainId": "item-6",
+      "displayName": "Ледяной лук",
+      "displayDescription": "Замораживает цели при попадании. Стрелы бесконечны.",
+      "price": { "regularPrice": 1100 },
+      "displayAssets": [
+        {
+          "full_background": "/images/item-6.svg",
+          "background": "/images/item-6.svg"
+        }
+      ]
+    },
+    {
+      "mainId": "item-7",
+      "displayName": "Плащ огня",
+      "displayDescription": "Горящий плащ, дающий иммунитет к огненному урону.",
+      "price": { "regularPrice": 700 },
+      "displayAssets": [
+        {
+          "full_background": "/images/item-7.svg",
+          "background": "/images/item-7.svg"
+        }
+      ]
+    },
+    {
+      "mainId": "item-8",
+      "displayName": "Ночная броня",
+      "displayDescription": "Лёгкий броневой костюм, усиливающийся в темноте.",
+      "price": { "regularPrice": 1800 },
+      "displayAssets": [
+        {
+          "full_background": "/images/item-8.svg",
+          "background": "/images/item-8.svg"
+        }
+      ]
+    },
+    {
+      "mainId": "item-9",
+      "displayName": "Алые крылья",
+      "displayDescription": "Позволяют парить над полем боя и атаковать с воздуха.",
+      "price": { "regularPrice": 2500 },
+      "displayAssets": [
+        {
+          "full_background": "/images/item-9.svg",
+          "background": "/images/item-9.svg"
+        }
+      ]
+    },
+    {
+      "mainId": "item-10",
+      "displayName": "Кристальный посох",
+      "displayDescription": "Магический посох, усиливающий все заклинания.",
+      "price": { "regularPrice": 1600 },
+      "displayAssets": [
+        {
+          "full_background": "/images/item-10.svg",
+          "background": "/images/item-10.svg"
+        }
+      ]
+    },
+    {
+      "mainId": "item-11",
+      "displayName": "Лесной рюкзак",
+      "displayDescription": "Увеличивает вместимость инвентаря и скорость передвижения.",
+      "price": { "regularPrice": 600 },
+      "displayAssets": [
+        {
+          "full_background": "/images/item-11.svg",
+          "background": "/images/item-11.svg"
+        }
+      ]
+    },
+    {
+      "mainId": "item-12",
+      "displayName": "Перчатки инферно",
+      "displayDescription": "Огненные перчатки, поджигающие врагов при ударе.",
+      "price": { "regularPrice": 1300 },
+      "displayAssets": [
+        {
+          "full_background": "/images/item-12.svg",
+          "background": "/images/item-12.svg"
+        }
+      ]
+    }
+  ]
+}
