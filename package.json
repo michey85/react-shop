@@ -5,16 +5,15 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "web-vitals": "^0.2.4"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "scripts": {
     "prettier": "prettier . -w",
     "start": "rsbuild dev",
     "build": "rsbuild build",
     "preview": "rsbuild preview",
-    "predeploy": "npm run build",
+    "predeploy": "GITHUB_PAGES=true rsbuild build",
     "deploy": "gh-pages -d build"
   },
   "browserslist": {

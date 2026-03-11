@@ -3,6 +3,8 @@ import { pluginReact } from '@rsbuild/plugin-react';
 
 const { publicVars, rawPublicVars } = loadEnv({ prefixes: ['REACT_APP_'] });
 
+const assetPrefix = process.env.GITHUB_PAGES === 'true' ? '/react-shop/' : '/';
+
 export default defineConfig({
   plugins: [pluginReact()],
   html: {
@@ -10,7 +12,7 @@ export default defineConfig({
   },
   output: {
     polyfill: 'usage',
-    assetPrefix: '/react-shop/',
+    assetPrefix,
     distPath: {
       root: 'build',
     },
@@ -19,6 +21,7 @@ export default defineConfig({
     define: {
       ...publicVars,
       'process.env': JSON.stringify(rawPublicVars),
+      'process.env.PUBLIC_PATH': JSON.stringify(assetPrefix),
     },
   },
 });

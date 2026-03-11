@@ -85,7 +85,15 @@ function Shop() {
     fetch(API_URL)
       .then(response => response.json())
       .then(data => {
-        data.shop && setGoods(data.shop);
+        const prefix = process.env.PUBLIC_PATH;
+        const goods = (data.shop || []).map(item => ({
+          ...item,
+          displayAssets: item.displayAssets.map(asset => ({
+            full_background: prefix + asset.full_background.replace(/^\//, ''),
+            background: prefix + asset.background.replace(/^\//, ''),
+          })),
+        }));
+        setGoods(goods);
         setLoading(false);
       });
   }, []);
