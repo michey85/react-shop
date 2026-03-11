@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { API_KEY, API_URL } from '../config';
+import { API_URL } from '../config';
 import { Alert } from './Alert';
 import { BasketList } from './BasketList';
 import { Cart } from './Cart';
@@ -82,11 +82,7 @@ function Shop() {
   };
 
   useEffect(function getGoods() {
-    fetch(API_URL, {
-      headers: {
-        Authorization: API_KEY,
-      },
-    })
+    fetch(API_URL)
       .then(response => response.json())
       .then(data => {
         data.shop && setGoods(data.shop);

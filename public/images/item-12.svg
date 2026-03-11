@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#ff5722"/>
+  <rect x="40" y="40" width="432" height="432" fill="#ff5722" opacity="0.6" rx="20"/>
+  <text x="256" y="230" font-family="Arial,sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle" opacity="0.9">⚡</text>
+  <text x="256" y="310" font-family="Arial,sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">Inferno Gloves</text>
+</svg>
